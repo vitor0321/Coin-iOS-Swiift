@@ -11,6 +11,8 @@
 		8563ADD32AE0786500ADF367 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563ADD22AE0786500ADF367 /* ContentView.swift */; };
 		8563ADD52AE0786800ADF367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8563ADD42AE0786800ADF367 /* Assets.xcassets */; };
 		8563ADD82AE0786800ADF367 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8563ADD72AE0786800ADF367 /* Preview Assets.xcassets */; };
+		8563ADE62AE07D5100ADF367 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563ADE52AE07D5100ADF367 /* CoinViewModel.swift */; };
+		85D230342AE2B4E1004B5056 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D230332AE2B4E1004B5056 /* CoinDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8563ADD22AE0786500ADF367 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8563ADD42AE0786800ADF367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8563ADD72AE0786800ADF367 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8563ADE52AE07D5100ADF367 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		85D230332AE2B4E1004B5056 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,8 @@
 		8563ADCF2AE0786500ADF367 /* CoinsNet */ = {
 			isa = PBXGroup;
 			children = (
-				8563ADD02AE0786500ADF367 /* CoinsNetApp.swift */,
-				8563ADD22AE0786500ADF367 /* ContentView.swift */,
+				8563ADDE2AE0794F00ADF367 /* App */,
+				8563ADE02AE0796800ADF367 /* Core */,
 				8563ADD42AE0786800ADF367 /* Assets.xcassets */,
 				8563ADD62AE0786800ADF367 /* Preview Content */,
 			);
@@ -65,6 +69,64 @@
 				8563ADD72AE0786800ADF367 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8563ADDE2AE0794F00ADF367 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8563ADD02AE0786500ADF367 /* CoinsNetApp.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		8563ADE02AE0796800ADF367 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8563ADE42AE079FB00ADF367 /* AllCoins */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		8563ADE12AE0797300ADF367 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8563ADE22AE0797E00ADF367 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8563ADD22AE0786500ADF367 /* ContentView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8563ADE32AE0799300ADF367 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8563ADE52AE07D5100ADF367 /* CoinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8563ADE42AE079FB00ADF367 /* AllCoins */ = {
+			isa = PBXGroup;
+			children = (
+				85D230322AE2B4A9004B5056 /* Service */,
+				8563ADE12AE0797300ADF367 /* Model */,
+				8563ADE22AE0797E00ADF367 /* View */,
+				8563ADE32AE0799300ADF367 /* ViewModel */,
+			);
+			name = AllCoins;
+			sourceTree = "<group>";
+		};
+		85D230322AE2B4A9004B5056 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				85D230332AE2B4E1004B5056 /* CoinDataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D230342AE2B4E1004B5056 /* CoinDataService.swift in Sources */,
+				8563ADE62AE07D5100ADF367 /* CoinViewModel.swift in Sources */,
 				8563ADD32AE0786500ADF367 /* ContentView.swift in Sources */,
 				8563ADD12AE0786500ADF367 /* CoinsNetApp.swift in Sources */,
 			);
